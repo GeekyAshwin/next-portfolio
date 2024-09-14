@@ -107,9 +107,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "A Full Stack Developer with a strong focus on building scalable and efficient web applications. Skilled in Frontend Frameworks like Angular, Vue and have experties in Backend Technologies like Laravel, NodeJS, NestJS. Familiar with working with Linux Environment. Good understanding of API Integragtion, API Development, State Management, Third party service Integration, Packages , Socket Programming, and Version Control System like Git.",
   },
   {
     quote:
@@ -199,5 +197,147 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+];
+
+export const educations = [
+  {
+    id: 1,
+    title: "Diploma in Computer Science & Engineering (2018 - 2021)",
+    desc: " Completed with 86.80%. Securing 1st place in College and 3rd place in Uttarakhand.",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
+  },
+];
+
+export const technologies = [
+  {
+    id: 1,
+    category: "Frontend",
+    skills: [
+      {
+        id: 1,
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+        name: "HTML5",
+      },
+      {
+        id: 2,
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+        name: "CSS3",
+      },
+      {
+        id: 3,
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        img: "https://angular.io/assets/images/logos/angular/angular.svg",
+        name: "Angular",
+      },
+      {
+        id: 5,
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg",
+        name: "TailwindCSS",
+      },
+      {
+        id: 6,
+        img: "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+        name: "Vue",
+      },
+    ],
+  },
+  {
+    id: 2,
+    category: "Backend",
+    skills: [
+      {
+        id: 1,
+        img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg",
+        name: "Laravel",
+      },
+      {
+        id: 2,
+        img: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+        name: "NodeJS",
+      },
+      {
+        id: 3,
+        img: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+        name: "Express",
+      },
+      {
+        id: 4,
+        img: "https://d33wubrfki0l68.cloudfront.net/ff1c1f28e793de2c297fb39c7504d1e42f1265d7/f3f1c/img/logo-small.svg",
+        name: "NestJS",
+      },
+    ],
+  },
+  {
+    id: 3,
+    category: "Databases",
+    skills: [
+      {
+        id: 1,
+        img: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+        name: "SQL",
+      },
+      {
+        id: 2,
+        img: "https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg",
+        name: "MySQL",
+      },
+      {
+        id: 3,
+        img: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+        name: "MongoDB",
+      },
+      {
+        id: 4,
+        img: "https://upload.wikimedia.org/wikipedia/commons/5/50/Couchbase_logo.png",
+        name: "Couchbase",
+      },
+    ],
+  },
+  {
+    id: 4,
+    category: "Tools",
+    skills: [
+      {
+        id: 1,
+        img: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+        name: "VSCode",
+      },
+      {
+        id: 2,
+        img: "https://www.jetbrains.com/company/brand/img/jetbrains/logo_phpstorm.svg",
+        name: "PHPStorm",
+      },
+      {
+        id: 3,
+        img: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg",
+        name: "Git & GitHub",
+      },
+      {
+        id: 4,
+        img: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png",
+        name: "Postman",
+      },
+      {
+        id: 5,
+        img: "https://upload.wikimedia.org/wikipedia/commons/1/16/MySQL_Workbench_Logo.png",
+        name: "MySQL Workbench",
+      },
+      {
+        id: 6,
+        img: "https://avatars.githubusercontent.com/u/62419525?s=200&v=4",
+        name: "Beekeeper Studio",
+      },
+      {
+        id: 7,
+        img: "https://upload.wikimedia.org/wikipedia/commons/8/80/Dbdesigner_logo.png",
+        name: "DB Designer",
+      },
+    ],
   },
 ];
