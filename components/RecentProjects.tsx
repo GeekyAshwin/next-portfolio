@@ -4,75 +4,56 @@ import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { workExperience } from "@/data";
+import { Button } from "./ui/MovingBorders";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
+    <div id="projects" className="py-20">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-purple">Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
+
+      <div className="w-full mt-12 flex flex-col gap-10">
+        {projects.map((project) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
+            key={project.id}
+            className="bg-gradient-to-br from-[#1a1a2e] via-[#23234b] to-[#0f3460] rounded-3xl shadow-2xl p-8 md:p-12 border border-purple-700/40 relative overflow-hidden"
           >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
-            >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
-                {item.des}
-              </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
+            <div className="flex flex-col items-start gap-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-purple mb-3 flex items-center gap-2">
+                {project.title}
+                <span className="ml-2 text-purple-400 animate-pulse">
+                  <FaLocationArrow />
+                </span>
+              </h2>
+              <div>
+              <div className="flex flex-row flex-wrap gap-4 items-center mb-4">
+                {project.technologies &&
+                  project.technologies.map((tech, idx) => (
+                    <div key={idx} className="flex items-center">
+                      <img
+                        src={tech.img}
+                        alt={tech.name}
+                        title={tech.name}
+                        className="w-8 h-8 object-contain"
+                      />
                     </div>
                   ))}
-                </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
               </div>
-            </PinContainer>
+              </div>
+              <ul className="list-disc list-inside space-y-2 text-white/90 text-base md:text-lg pl-2">
+                {Array.isArray(project.description) ? (
+                  project.description.map((desc, idx) => (
+                    <li key={idx}>{desc}</li>
+                  ))
+                ) : (
+                  <li>{project.description}</li>
+                )}
+              </ul>
+            </div>
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-purple-700/20 rounded-full blur-2xl pointer-events-none"></div>
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
           </div>
         ))}
       </div>

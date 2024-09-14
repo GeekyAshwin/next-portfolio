@@ -1,17 +1,17 @@
 import React from "react";
 
-import { workExperience } from "@/data";
+import { educations } from "@/data";
 import { Button } from "./ui/MovingBorders";
 
-const Experience = () => {
+const Education = () => {
   return (
-    <div id="work-experience" className="py-20 w-full">
+    <div id="education" className="py-20 w-full">
       <h1 className="heading">
-        My <span className="text-purple">work experience</span>
+        My <span className="text-purple">Education</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-2 grid-cols-1 gap-10">
-        {workExperience.map((card) => (
+        {educations.map((card) => (
           <Button
             key={card.id}
             duration={Math.floor(Math.random() * 10000) + 10000}
@@ -34,23 +34,11 @@ const Experience = () => {
               </div>
               <div className="lg:ms-5 flex-grow lg:basis-8/12">
                 <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.company}
-                </h1>
-                <h2 className="text-start text-md md:text-xl font-bold">
                   {card.title}
-                </h2>
+                </h1>
                 <p className="text-start text-white-100 mt-3 font-semibold">
                   {card.desc}
                 </p>
-                <ul className="mt-4 list-disc list-inside space-y-2 text-left">
-                  {card.roles &&
-                    card.roles.map((role, idx) => (
-                      <li key={idx}>
-                        <span className="font-semibold">{role.title}:</span>{" "}
-                        {role.description}
-                      </li>
-                    ))}
-                </ul>
               </div>
             </div>
           </Button>
@@ -60,4 +48,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
