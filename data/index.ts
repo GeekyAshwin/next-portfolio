@@ -211,6 +211,7 @@ export const projects = [
       "Leveraged D-ID API to create talking head videos by combining script audio with user images and prompts.",
       "Implemented asynchronous processing and status tracking for video rendering workflows.",
     ],
+    
     technologies: [
       {
         name: "Next.js",
