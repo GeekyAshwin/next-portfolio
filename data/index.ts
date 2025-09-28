@@ -211,7 +211,7 @@ export const projects = [
       "Leveraged D-ID API to create talking head videos by combining script audio with user images and prompts.",
       "Implemented asynchronous processing and status tracking for video rendering workflows.",
     ],
-    
+
     technologies: [
       {
         name: "Next.js",
@@ -396,7 +396,7 @@ export const workExperience = [
     id: 3,
     title: "Senior Software Engineer (Jan 2025 - Present)",
     company: "Bliss Technology",
-    desc: "Currently working as a Software Engineer at Quantic, leveraging technologies like Laravel and Couchbase to build scalable solutions and contributing my skills to drive innovation.",
+    desc: "Serving as a Senior Software Engineer at Bliss Technology. I architect and implement scalable solutions using technologies such as Laravel, VueJS and NextJS. My role focuses on driving innovation, optimizing system performance, and delivering     high-quality software to meet business objectives.",
     className: "md:col-span-2", // change to md:col-span-2
     roles: [
       {
@@ -421,7 +421,7 @@ export const workExperience = [
     id: 2,
     title: "Software Engineer (Sep 2024 - Jan 2025)",
     company: "Quantic",
-    desc: "Currently working as a Software Engineer at Quantic, leveraging technologies like Laravel and Couchbase to build scalable solutions and contributing my skills to drive innovation.",
+    desc: "Worked as a Software Engineer at Quantic, where I leveraged technologies like Laravel and Couchbase to build scalable solutions and contributed my skills to drive innovation.",
     className: "md:col-span-2", // change to md:col-span-2
     roles: [
       {
@@ -430,9 +430,14 @@ export const workExperience = [
           "Successfully integrated Breathepay Payment Service to manage payments securely.",
       },
       {
-        title: "CRM and POS System Development",
+        title: "CRM System Enhancement",
         description:
-          "Participated in the development and customization of CRM features such as customer data management, lead tracking, and workflow automation. Worked on POS modules, including inventory management, billing, order processing, and real-time data synchronization.",
+          "Enhanced and customized CRM features, including customer data management, lead tracking, and workflow automation to improve business processes.",
+      },
+      {
+        title: "POS Module Implementation",
+        description:
+          "Developed and maintained POS modules such as inventory management, billing, order processing, and real-time data synchronization.",
       },
       {
         title: "Delivery Service Integration",
